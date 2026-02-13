@@ -34,6 +34,7 @@ export default function RootLayout({
         <Toaster position="top-right" />
         <Analytics />
         {children}
+        <Analytics />
       </body>
     </html>
   );
