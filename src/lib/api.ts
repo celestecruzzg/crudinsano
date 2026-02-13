@@ -2,7 +2,7 @@ import axios from "axios";
 import CryptoJS from "crypto-js";
 
 export const api = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_BASE_URL_BACKEND,
+  baseURL: process.env.NEXT_PUBLIC_BASE_URL_BACKEND || "http://localhost:3000",
   timeout: 5000,
   headers: {
     "Content-Type": "application/json",
